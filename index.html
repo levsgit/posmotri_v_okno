@@ -115,5 +115,40 @@
       </div>
     </template>
     <script src="./scripts/script.js"></script>
+
+
+    <!-- Debug pixel-perfect
+
+  <style>
+    #perfect {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      display: none;
+      width: 100%;
+      opacity: 0.5;
+      filter: sepia(1);
+      pointer-events: none;
+      user-select: none;
+      user-select: none;
+    }
+  </style>
+  <img src="u.png" id="perfect">
+  <script>
+    document.addEventListener('keydown', function (event) {
+      if (event.ctrlKey && event.key === 'Enter') {
+        toggleDisplay();
+      }
+    });
+    function toggleDisplay() {
+      var perfectBlock = document.getElementById('perfect');
+      if (perfectBlock.style.display === 'block') {
+        perfectBlock.style.display = 'none';
+      } else {
+        perfectBlock.style.display = 'block';
+      }
+    }
+  </script> -->
   </body>
 </html>
