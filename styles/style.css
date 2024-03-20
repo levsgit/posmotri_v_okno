@@ -10,6 +10,7 @@ html {
 
 .page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -41,11 +42,11 @@ ol {
 }
 
 .content {
+  justify-content: space-evenly;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: flex-end;
-  gap: 33px;
   width: 100%;
 }
 
@@ -55,13 +56,13 @@ ol {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: flex-end;
-  gap: 52px;
+  gap: 40px;
 }
 
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 26px;
   height: 534px;
 }
 
@@ -100,8 +101,13 @@ ol {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  border: 1px solid transparent;
+  outline: none;
   padding: 2px;
+  height: 104px;
+}
+
+.content__card-link:focus-visible .content__video-card {
+  outline: 1px solid #fff;
 }
 
 .content__video-card:hover {
@@ -109,8 +115,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -121,7 +127,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -133,7 +139,7 @@ ol {
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 73.5px;
+  line-height: 71px;
   text-align: left;
   text-transform: uppercase;
 }
@@ -150,6 +156,7 @@ ol {
 }
 
 .content__video-card-title {
+  padding-right: 17px;
   margin-bottom: 6px;
   font-family: Oswald, sans-serif;
   font-weight: 700;
@@ -214,7 +221,7 @@ ol {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 18px;
+  gap: 15px;
   margin-bottom: 4px;
 }
 
@@ -279,10 +286,6 @@ input[type="checkbox"]:checked+.search-form__pseudo-checkbox::before {
 
 .content__video-card:active {
   background-color: #545050;
-}
-
-.content__card-link:focus-visible .content__video-card {
-  border: 1px solid #fff;
 }
 
 .content__card-link_current {
